@@ -18,7 +18,7 @@ const App = () => {
     console.log(data);
   }, [data]);
 
-  // This is the a request with fetch
+  // This is a request with fetch
   // useEffect(() => {
   //   fetch("get-data/sample.json")
   //     .then((res) => {

@@ -7,7 +7,10 @@ export const api = createApi({
     getData: builder.query<unknown, void>({
       query: () => `get-data/sample.json`,
     }),
+    updateData: builder.mutation<unknown, number>({
+      query: (id) => `update-data/${id}`,
+    }),
   }),
 });
 
-export const { useGetDataQuery } = api;
+export const { useGetDataQuery, useUpdateDataMutation } = api;
